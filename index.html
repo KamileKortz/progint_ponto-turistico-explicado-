@@ -1,0 +1,307 @@
+<!-- Define que o documento usa HTML5 -->
+<!DOCTYPE html>
+
+<!-- Início do HTML e define o idioma como português do Brasil -->
+<html lang="pt-BR">
+
+<head>
+    <!-- Permite usar caracteres especiais como ç e acentos -->
+    <meta charset="UTF-8" />
+
+    <!-- Faz o site funcionar corretamente em celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título que aparece na aba do navegador -->
+    <title>Morretes - PR</title>
+
+    <!-- Importa o CSS do Bootstrap pela internet -->
+    <!-- Sem isso, as classes do Bootstrap não funcionam -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Conecta o arquivo CSS personalizado -->
+    <!-- Sem isso, os estilos criados por você não aparecem -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR = barra de navegação -->
+    <!-- navbar-expand-lg = expande o menu em telas grandes -->
+    <!-- navbar-dark = deixa os textos claros -->
+    <!-- bg-dark = fundo escuro -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <!-- container centraliza o conteúdo -->
+        <div class="container">
+
+            <!-- Marca/logo do site -->
+            <a class="navbar-brand" href="#">Morretes - PR</a>
+
+            <!-- Botão do menu hamburguer no celular -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
+                <!-- Ícone do menu hamburguer -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Área do menu que será aberta/fechada -->
+            <div class="collapse navbar-collapse" id="menu">
+
+                <!-- Lista do menu -->
+                <!-- ms-auto joga o menu para a direita -->
+                <ul class="navbar-nav ms-auto">
+
+                    <!-- Cada item do menu -->
+                    <li class="nav-item">
+                        <!-- href="#inicio" leva até a seção com id="inicio" -->
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pontos">Pontos Turísticos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gastronomia">Gastronomia</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SEÇÃO INICIAL -->
+    <!-- text-center = centraliza textos -->
+    <!-- text-white = texto branco -->
+    <section id="inicio" class="boas-vindas text-center text-white">
+
+        <div class="container">
+
+            <!-- Título principal -->
+            <h1>Bem-vindo a Morretes!</h1>
+
+            <!-- lead = deixa o texto maior e mais destacado -->
+            <p class="lead">
+                Uma das cidades mais charmosas do Paraná,
+                entre a Serra do Mar e o Litoral.
+            </p>
+
+            <!-- Botão -->
+            <!-- btn = estilo de botão -->
+            <!-- btn-outline-light = botão transparente branco -->
+            <!-- mt-2 = margem superior -->
+            <a href="#pontos" class="btn btn-outline-light mt-2">
+                Ver Pontos Turísticos
+            </a>
+
+        </div>
+    </section>
+
+    <!-- SEÇÃO DOS PONTOS TURÍSTICOS -->
+    <!-- py-5 = padding em cima e embaixo -->
+    <section id="pontos" class="py-5">
+
+        <div class="container">
+
+            <!-- text-center centraliza -->
+            <!-- mb-4 cria margem inferior -->
+            <h2 class="text-center mb-4">Pontos Turísticos</h2>
+
+            <!-- CARROSSEL -->
+            <!-- carousel slide ativa o carrossel -->
+            <!-- data-bs-ride faz ele passar automaticamente -->
+            <div id="carrossel" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicadores das bolinhas -->
+                <div class="carousel-indicators">
+
+                    <!-- Cada botão representa um slide -->
+                    <!-- data-bs-slide-to define qual slide abrir -->
+
+                    <button type="button" data-bs-target="#carrossel" data-bs-slide-to="0" class="active"></button>
+
+                    <button type="button" data-bs-target="#carrossel" data-bs-slide-to="1"></button>
+
+                    <button type="button" data-bs-target="#carrossel" data-bs-slide-to="2"></button>
+
+                    <button type="button" data-bs-target="#carrossel" data-bs-slide-to="3"></button>
+
+                    <button type="button" data-bs-target="#carrossel" data-bs-slide-to="4"></button>
+
+                </div>
+
+                <!-- Área dos slides -->
+                <!-- rounded = bordas arredondadas -->
+                <!-- shadow = sombra -->
+                <div class="carousel-inner rounded shadow">
+
+                    <!-- PRIMEIRO SLIDE -->
+                    <!-- active define o slide inicial -->
+                    <div class="carousel-item active slide-hisgeopar">
+
+                        <!-- Imagem -->
+                        <!-- d-block = display block -->
+                        <!-- w-100 = largura 100% -->
+                        <img src="https://viajarcorrendo.com.br/wp-content/uploads/2026/01/Quanto-custa-viajar-para-Gramado.jpg"
+                            class="d-block w-100" alt="HISGEOPAR" />
+
+                        <!-- Legenda do slide -->
+                        <div class="carousel-caption d-block">
+
+                            <h4>Parque Temático HISGEOPAR</h4>
+
+                            <p>
+                                Museu a céu aberto com exposições sobre a história
+                                e geologia do Paraná.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- SEGUNDO SLIDE -->
+                    <div class="carousel-item slide-marumbi">
+
+                        <img src="https://static.wixstatic.com/media/b8d284_29ef797cf0114c21850b1ab3d0f72f93~mv2.jpg"
+                            class="d-block w-100" alt="PARQUE" />
+
+                        <div class="carousel-caption d-block">
+
+                            <h4>Parque Estadual Pico do Marumbi</h4>
+
+                            <p>
+                                Montanhas e trilhas de Mata Atlântica
+                                com vista para o litoral.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- TERCEIRO SLIDE -->
+                    <div class="carousel-item slide-rio">
+
+                        <img src="https://jblitoral.com.br/wp-content/uploads/2024/02/Foto-1-Reproducao-Internet-1.jpg?v=11.05.1.21.39"
+                            class="d-block w-100" alt="RIO" />
+
+                        <div class="carousel-caption d-block">
+
+                            <h4>Rio Nhundiaquara</h4>
+
+                            <p>
+                                O coração de Morretes: banho,
+                                caminhadas e paisagens à beira d'água.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- QUARTO SLIDE -->
+                    <div class="carousel-item slide-graciosa">
+
+                        <img src="https://www.parana.pr.gov.br/sites/default/arquivos_restritos/files/imagem/2023-08/estradagraciosaogura1.jpg"
+                            class="d-block w-100" alt="ESTRADA" />
+
+                        <div class="carousel-caption d-block">
+
+                            <h4>Estrada da Graciosa</h4>
+
+                            <p>
+                                Uma das estradas mais belas do Brasil,
+                                cortando a Serra do Mar.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- BOTÃO VOLTAR -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrossel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <!-- BOTÃO AVANÇAR -->
+                <button class="carousel-control-next" type="button" data-bs-target="#carrossel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO GASTRONOMIA -->
+    <!-- bg-light = fundo claro -->
+    <section id="gastronomia" class="py-5 bg-light">
+
+        <div class="container">
+
+            <h2 class="text-center mb-4">Gastronomia Típica</h2>
+
+            <!-- row cria uma linha -->
+            <!-- g-4 adiciona espaçamento -->
+            <div class="row g-4">
+
+                <!-- col-md-4 = 3 colunas em telas médias -->
+                <div class="col-md-4">
+
+                    <!-- card = cartão Bootstrap -->
+                    <!-- h-100 deixa todos do mesmo tamanho -->
+                    <div class="card h-100">
+
+                        <!-- Cabeçalho do card -->
+                        <div class="card-header bg-dark text-white">
+                            Barreado
+                        </div>
+
+                        <!-- Conteúdo -->
+                        <div class="card-body">
+
+                            <h6>Ingredientes</h6>
+
+                            <!-- Lista Bootstrap -->
+                            <ul class="list-group list-group-flush mb-3">
+
+                                <li class="list-group-item">
+                                    Carne bovina (chã de fora)
+                                </li>
+
+                                <li class="list-group-item">
+                                    Toucinho defumado
+                                </li>
+
+                            </ul>
+
+                            <h6>Preparo</h6>
+
+                            <!-- small deixa texto menor -->
+                            <p class="small">
+                                A carne é colocada em panela de barro...
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <!-- py-3 = padding vertical -->
+    <footer class="bg-dark text-white text-center py-3">
+
+        <small>© 2025 Morretes - PR | Turismo</small>
+
+        <!-- target="_blank" abre em nova aba -->
+        <a href="https://maps.google.com/?q=Morretes,PR" target="_blank" class="text-white-50 small">
+            📍 Ver no Google Maps
+        </a>
+
+    </footer>
+
+    <!-- JavaScript do Bootstrap -->
+    <!-- Necessário para navbar, carrossel e menu funcionarem -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

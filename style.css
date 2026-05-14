@@ -1,0 +1,114 @@
+/* 
+Classe da seção inicial.
+O ponto "." significa que é uma classe.
+*/
+.boas-vindas {
+
+    /*
+    linear-gradient cria um degradê.
+    rgba controla transparência.
+    Isso escurece o fundo.
+    
+    Se remover:
+    o fundo ficará sem camada escura.
+    */
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5));
+
+    /*
+    Cor de fundo verde.
+    
+    Se remover:
+    a seção ficará sem cor de fundo.
+    */
+    background-color: rgb(69, 128, 69);
+
+    /*
+    Espaçamento interno.
+    100px em cima/baixo e 0 dos lados.
+    
+    Se remover:
+    a área ficará muito apertada.
+    */
+    padding: 100px 0;
+}
+
+/*
+Área interna do carrossel.
+*/
+.carousel-inner {
+
+    /*
+    Altura fixa do carrossel.
+    
+    Se remover:
+    cada imagem pode ficar com tamanhos diferentes.
+    */
+    height: 600px;
+}
+
+/*
+Cada slide do carrossel.
+*/
+.carousel-item {
+
+    /*
+    Define altura dos slides.
+    */
+    height: 600px;
+
+    /*
+    Faz a imagem cobrir todo o espaço.
+    
+    Se remover:
+    podem aparecer espaços vazios.
+    */
+    background-size: cover;
+
+    /*
+    Centraliza a imagem.
+    
+    Se remover:
+    a imagem pode ficar torta/deslocada.
+    */
+    background-position: center;
+}
+
+/*
+Slide do HISGEOPAR.
+*/
+.slide-hisgeopar {
+
+    /*
+    Camada escura sobre o slide.
+    */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4));
+}
+
+/*
+Slide Marumbi.
+*/
+.slide-marumbi {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4));
+}
+
+/*
+Slide Rio.
+*/
+.slide-rio {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4));
+}
+
+/*
+Slide Estrada da Graciosa.
+*/
+.slide-graciosa {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4));
+}
